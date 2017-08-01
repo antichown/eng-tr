@@ -34,7 +34,7 @@ class RepeatTimer(Thread):
         self.finished.set()
 
 
-def donbabadonelim():
+def donelim():
 	satir = randomsatir("eng-tr.txt")
 	satir = satir.replace("\n","")
 
@@ -47,7 +47,7 @@ def donbabadonelim():
 	os.system(komut)
 
 
-t = RepeatTimer(40.0, donbabadonelim)
+t = RepeatTimer(40.0, donelim)
 t.start()
 
 
